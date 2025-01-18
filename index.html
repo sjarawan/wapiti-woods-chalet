@@ -4,57 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wapiti Woods Chalet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        header {
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-        header img {
-            height: 80px;
-        }
-        .featured-image {
-            width: 65%;
-            max-height: 600px;
-            object-fit: cover;
-        }
-        .content {
-            padding: 20px;
-        }
-        .cta-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <img src="/images/logo.png" alt="Logo">
+        <h1>Wapiti Woods Chalet</h1>
+        <h4 style="color: white;">On the Yakima River in Cle Elum, Washington</h4>
+        <nav>
+            <ul>
+                <li><a href="#about">Booking</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#amenities">Amenities</a></li>                
+                <li><a href="#guides">Fishing guides</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <img src="/images/image1.jpg" alt="Featured Property" class="featured-image">
-        <div class="content">
-            <h1>Welcome to Wapiti Woods Chalet</h1>
-            <p>Discover a tranquil retreat by the river. Relax, unwind, and make lasting memories.</p>
+    
+    <section id="about">
+        <div class="about-content">
+            <p>
+                Escape to Wapiti Woods Chalet, a luxury retreat on 70 feet of Yakima River frontage near Suncadia in Cle Elum, Washington.
+                Enjoy stunning views, fishing, wildlife, and riverside relaxation.
+            </p>      
+            <p>For availability and reservations, check out our Airbnb listing</p>
             <a href="https://www.airbnb.com/rooms/1300915992588031876" class="cta-button" target="_blank">Book on Airbnb</a>
         </div>
-        <img src="/images/image2.jpg" alt="Featured Property" class="featured-image">
-    </main>
+    </section>
+    
+    <section id="featured-image">
+        <img src="images/image0.jpg" alt="Featured Image" class="featured-image">
+    </section>
+
+    <section id="gallery">
+        <img src="images/image0.jpg" alt="Chalet exterior - Winter" class="thumbnail" data-full="images/image0.jpg">
+        <img src="images/image1.jpg" alt="Chalet exterior - Fall" class="thumbnail" data-full="images/image1.jpg">
+        <img src="images/image2.jpg" alt="View from river" class="thumbnail" data-full="images/image2.jpg">
+        <img src="images/image3.jpg" alt="Chalet exterior - Winter" class="thumbnail" data-full="images/image3.jpg">
+        <img src="images/image4.jpg" alt="Chalet exterior - Fall" class="thumbnail" data-full="images/image4.jpg">
+        <img src="images/image5.jpg" alt="View from river" class="thumbnail" data-full="images/image5.jpg">
+        <img src="images/image6.jpg" alt="Chalet exterior - Winter" class="thumbnail" data-full="images/image6.jpg">
+        <img src="images/image7.jpg" alt="Chalet exterior - Fall" class="thumbnail" data-full="images/image7.jpg">
+        <img src="images/image8.jpg" alt="View from river" class="thumbnail" data-full="images/image8.jpg">
+        <img src="images/image9.jpg" alt="Chalet exterior - Winter" class="thumbnail" data-full="images/image9.jpg">
+        <img src="images/image10.jpg" alt="Chalet exterior - Fall" class="thumbnail" data-full="images/image10.jpg">
+        <img src="images/image11.jpg" alt="View from river" class="thumbnail" data-full="images/image11.jpg">
+        <img src="images/image12.jpg" alt="View from river" class="thumbnail" data-full="images/image12.jpg">
+        <img src="images/image13.jpg" alt="View from river" class="thumbnail" data-full="images/image13.jpg">
+    </section>
+
+    <!-- Lightbox Modal Structure -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-button">&times;</span>
+            <button class="prev-button">&#10094;</button>
+            <img class="lightbox-image" src="" alt="Full Image">
+            <button class="next-button">&#10095;</button>
+        </div>
+    </div>
+
+    <section id="amenities">
+        <div class="amenities-content">
+            <h2>Welcome to Wapiti Woods Chalet</h2>
+            <p>
+                Escape to a luxurious retreat nestled on 70 feet of Yakima River frontage, minutes from Suncadia. This newly constructed cabin offers breathtaking river views, fly fishing, wildlife watching, and tranquil riverside relaxation.
+            </p>
+            
+            <h3>Inside the Cabin - Experience modern comfort and fun</h3>
+            <div class="amenities-grid">
+                <div class="amenity">
+                    <h4>Loft Game Room & Bunk Area</h4>
+                    <ul>
+                        <li>7' pool table & poker table</li>
+                        <li>Cozy seating with river views</li>
+                        <li>55" Roku TV and sofa area</li>
+                        <li>Selection of board and card games</li>
+                    </ul>
+                </div>
+                <div class="amenity">
+                    <h4>Bedrooms & Bathrooms</h4>
+                    <ul>
+                        <li><strong>Primary Suite:</strong> King bed, ensuite bathroom with dual shower heads</li>
+                        <li><strong>Bear Room:</strong> Queen bed with premium mattress</li>
+                        <li><strong>Angler Room:</strong> Queen bed with premium mattress</li>
+                    </ul>
+                </div>
+                <div class="amenity">
+                    <h4>Workspace & Arcade</h4>
+                    <ul>
+                        <li>Sit/stand desk and ergonomic chair</li>
+                        <li>32" curved HDMI monitor</li>
+                        <li>Arcade box with retro games</li>
+                    </ul>
+                </div>
+                <div class="amenity">
+                    <h4>Chef's Kitchen</h4>
+                    <ul>
+                        <li>Fully equipped with high-end appliances</li>
+                        <li>Cookware & tools for every meal</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <h3>Outdoor Relaxation & Activities</h3>
+            <div class="amenities-grid">
+                <div class="amenity">
+                    <h4>Hot Tub & Outdoor Lounge</h4>
+                    <ul>
+                        <li>6-person hot tub with river views</li>
+                        <li>Propane fire table with Adirondack chairs</li>
+                    </ul>
+                </div>
+                <div class="amenity">
+                    <h4>Riverside Activities</h4>
+                    <ul>
+                        <li>Deck for coffee, fishing, and picnics</li>
+                        <li>Nearby trails and water sports</li>
+                    </ul>
+                </div>
+                <div class="amenity">
+                    <h4>Nearby Adventures</h4>
+                    <ul>
+                        <li><strong>Winter:</strong> Skiing, snowboarding, snowmobiling</li>
+                        <li><strong>Summer:</strong> Hiking, mountain biking, beaches</li>
+                        <li><strong>Year-round:</strong> Wine tasting and exploring nearby towns</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <h3>Amenities</h3>
+            <ul class="amenities-list">
+                <li>6-person hot tub</li>
+                <li>5 Smart Roku TVs</li>
+                <li>Fast Wi-Fi</li>
+                <li>Covered outdoor patio with seating and BBQ</li>
+                <li>Riverside deck and picnic table</li>
+                <li>Outdoor fire table with Adirondack chairs</li>
+                <li>Indoor gas fireplace</li>
+                <li>Pack and play</li>
+                <li>Tesla L2 charger</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="guides">
+        <h2>Find a fly fishing guide</h2>
+        <p>Looking to learn fly fishing or take a float trip? Check out one of our recommended local guides for a great experience:</p>
+        <a href="zach-linder.html" class="cta-button" target="_blank">Zach Linder</a>
+        <a href="troutwater.html" class="cta-button" target="_blank">Troutwater</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Wapiti Woods Chalet. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the gallery thumbnails and lightbox modal elements
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const closeButton = document.querySelector('.close-button');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+
+        // Show the lightbox with the clicked image
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImage.src = thumbnail.getAttribute('data-full');
+                lightboxImage.dataset.index = index; // Store the index of the image
+            });
+        });
+
+        // Close the lightbox
+        closeButton.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        // Navigate to previous image
+        prevButton.addEventListener('click', () => {
+            let index = parseInt(lightboxImage.dataset.index);
+            index = (index === 0) ? thumbnails.length - 1 : index - 1;
+            lightboxImage.src = thumbnails[index].getAttribute('data-full');
+            lightboxImage.dataset.index = index;
+        });
+
+        // Navigate to next image
+        nextButton.addEventListener('click', () => {
+            let index = parseInt(lightboxImage.dataset.index);
+            index = (index === thumbnails.length - 1) ? 0 : index + 1;
+            lightboxImage.src = thumbnails[index].getAttribute('data-full');
+            lightboxImage.dataset.index = index;
+        });
+    </script>
 </body>
-</html>
+</html> 
